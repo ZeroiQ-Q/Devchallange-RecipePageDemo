@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+
+  padding: 52px 19% 0px 19%;
+}
+P {
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font: normal 700 48px playfair display;
+  width: max-content;
+}
+.dots {
+  padding-right: 12px;
+}
+.description-section {
+  display: flex;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+.description {
+  color: #4f4f4f;
+  line-height: 17px;
+  font: normal 500 14px montserrat;
+  width: 592px;
+  height: 51px;
+}
+.image-section {
+  height: auto;
+  width: 100%;
+  position: relative;
+}
+
+.image {
+  object-fit: scale-down;
+  height: 100%;
+  width: 100%;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 42px;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin-top: 48px;
+  height: 376px;
+  width: 216px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.inner-box {
+  height: 34px;
+  width: 122px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 27px;
+}
+.label-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.icon {
+  height: 100%;
+  width: 100%;
+}
+.label-top {
+  text-transform: uppercase;
+  font: normal 700 10px montserrat;
+  color: #bdbdbd;
+}
+.label-bottom {
+  font: normal 500 14px montserrat;
+}
+.serving-color {
+  color: #f2994a;
+}
+.content-section {
+  width: 100%;
+}
+.heading-label {
+  font: normal 700 24px playfair display;
+}
+.ingredients {
+  margin-top: 48px;
+}
+.dish-name {
+  margin-top: 32px;
+  font: italic 400 18px "Playfair Display, sans-serif";
+  color: #333333;
+  margin-bottom: 31px;
+}
+.square {
+  margin-top: 2.6px;
+  height: 21px;
+  width: 21px;
+  border: 1px solid #828282;
+  border-radius: 4px;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.ingredients-list,
+.instructions-list {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.list {
+  width: 65%;
+  font: normal 300 16px Montserrat;
+  color: #333333;
+}
+.Instructions {
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+.square-instructions {
+  margin-top: 2.6px;
+  height: 36px;
+  width: 36px;
+  border: none;
+  background-color: #f2994a;
+  border-radius: 6px;
+}
+.number-label {
+  text-align: center;
+  font: normal 700 24px playfair display;
+  color: white;
+}
+.source {
+  margin-top: 57px;
+  font: italic 400 16px Montserrat;
+  color: #bdbdbd;
+}
+.dev-info {
+  text-align: center;
+  margin-top: 93px;
+  width: 100%;
+  height: 17px;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828282;
+  padding-bottom: 24px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 32px 12px 0px 12px;
+  }
+  .mobile-headings {
+    font: normal 700 24px playfair display;
+  }
+  .description {
+    font: normal 500 12px montserrat;
+  }
+  .description-section {
+    width: 325px;
+    margin-bottom: 45px;
+  }
+  .info-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: max-content;
+    width: 100%;
+    gap: 20px;
+    box-shadow: none;
+    border: none;
+    margin-top: 24px;
+  }
+  .inner-box {
+    height: 26px;
+    width: 111;
+    gap: 5px;
+    width: max-content;
+  }
+  .icon-section {
+    height: 15px;
+    width: 15px;
+  }
+  .second-item {
+    grid-column: 1/2;
+  }
+  .label-section {
+    gap: 0px;
+  }
+  .label-top {
+    font-size: 8px;
+  }
+  .label-bottom {
+    font-size: 10px;
+  }
+  .ingredients {
+    font-size: 18px;
+    margin-top: 30px;
+  }
+  .dish-name {
+    font-size: 16px;
+    margin-top: 13px;
+    margin-bottom: 24px;
+  }
+  .list {
+    font-size: 14px;
+    width: 100%;
+  }
+  .list-instructions {
+    font-size: 16px;
+  }
+  .cheesecake {
+    margin-top: 42px;
+  }
+  .list-content {
+    gap: 8px;
+  }
+  .instructions-content {
+    gap: 13px;
+  }
+  .source {
+    margin-top: 26px;
+    font-size: 12px;
+  }
+}
+@media (min-width: 851px) and (max-width: 1150px) {
+  .list {
+    width: 51%;
+  }
+}
